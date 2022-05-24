@@ -55,4 +55,28 @@ public class MoneyTransferTest {
         assertEquals(firstCardBalanceResult, dashboardPage.getFirstCardBalance());
         assertEquals(secondCardBalanceResult, dashboardPage.getSecondCardBalance());
     }
+
+    @Test
+    public void shouldAmountTransferExceedsCardBalance() {
+        int amount = 21_500;
+        val transactionPage = pushSecondCardButton();
+        transactionPage.transferMoney(amount, getFirstCardNumber());
+        transactionPage.ErrorLimit();
+    }
+
+    @Test
+    public void shouldTransferFromFirstToFirstCard() {
+        int amount = 1000;
+        val transactionPage = pushFirstCardButton();
+        transactionPage.transferMoney(amount, getFirstCardNumber());
+        transactionPage.InvalidCard();
+    }
+
+    @Test
+    public void shouldAmountTransferZero() {
+        int amount = 0;
+        val transactionPage = pushSecondCardButton();
+        transactionPage.transferMoney(amount, getFirstCardNumber());
+        transactionPage.SmallAmount();
+    }
 }
