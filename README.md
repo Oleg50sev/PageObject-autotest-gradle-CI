@@ -1,1 +1,1 @@
-![example workflow](https://github.com/Oleg50sev/PageObject-autotest-gradle-CI.git/.github/workflows/gradle.yml/badge.svg)
+[![Java CI with Gradle](https://github.com/Oleg50sev/PageObject-autotest-gradle-CI/actions/workflows/gradle.yml/badge.svg)](https://github.com/Oleg50sev/PageObject-autotest-gradle-CI/actions/workflows/gradle.yml)
