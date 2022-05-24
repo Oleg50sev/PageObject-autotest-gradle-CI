@@ -1,1 +1,1 @@
-![example workflow](https://github.com/Oleg50sev/PageObject-autotest-gradle-CI.git/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+![example workflow](https://github.com/Oleg50sev/PageObject-autotest-gradle-CI.git/.github/workflows/gradle.yml/badge.svg)
